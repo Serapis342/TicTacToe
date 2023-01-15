@@ -5,15 +5,15 @@ window.onload = function() {
     window.countXs = 0;
     window.countOs = 0;
 
-    window.one = document.getElementById('0');
-    window.two = document.getElementById('1');
-    window.three = document.getElementById('2');
-    window.four = document.getElementById('3');
-    window.five = document.getElementById('4');
-    window.six = document.getElementById('5');
-    window.seven = document.getElementById('6');
-    window.eight = document.getElementById('7');
-    window.nine = document.getElementById('8');
+    let one = document.getElementById('0');
+    let two = document.getElementById('1');
+    let three = document.getElementById('2');
+    let four = document.getElementById('3');
+    let five = document.getElementById('4');
+    let six = document.getElementById('5');
+    let seven = document.getElementById('6');
+    let eight = document.getElementById('7');
+    let nine = document.getElementById('8');
     
     window.table = [one, two, three, four, five, six, seven, eight, nine];
     window.gameField = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
@@ -80,7 +80,6 @@ document.onclick = function()
         win(table[2].innerHTML);
     } else if(countXs == 5 && countOs == 4) {
         win('Draw');
-        console.log('Draw');
     } else {
         return;
     }
