@@ -84,3 +84,11 @@ document.onclick = function()
         return;
     }
 }
+
+document.onkeydown = function(e) 
+{
+    if(e.code === 'Space' || e.code === 'Enter' || e.code === 'NumpadEnter' || e.code === 'KeyR') 
+    {
+        location.reload();
+    }
+}
